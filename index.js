@@ -36,7 +36,8 @@ const env = process.env
     , secretsFile = resolve(require('homedir')(), `.${pkg.name}.env`)
 
 try {
-  Object.assign(env, require(secretsFile))
+  const {oauth} = require(secretsFile);
+  Object.assign(env, require(secretsFile),oauth)
 } catch (error) {
   debug('%s: %s', secretsFile, error.message)
   debug('%s: env file not found or invalid, moving on', secretsFile)

@@ -7,6 +7,7 @@ import store from './store'
 
 import Jokes from './components/Jokes'
 import NotFound from './components/NotFound'
+import Test from './components/Test'
 import AppContainer from './containers/AppContainer'
 
 render(
@@ -16,6 +17,7 @@ render(
         <IndexRedirect to="/jokes" />
         <Route path="/jokes" component={Jokes} />
       </Route>
+      <Route path='/test' component={Test} />
       <Route path='*' component={NotFound} />
     </Router>
   </Provider>,
