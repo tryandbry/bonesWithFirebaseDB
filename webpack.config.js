@@ -1,7 +1,9 @@
 'use strict'
-
+/*
 const LiveReloadPlugin = require('webpack-livereload-plugin')
     , devMode = require('.').isDevelopment
+*/
+const devMode = require('.').isDevelopment
 
 /**
  * Fast source maps rebuild quickly during development, but only give a link
@@ -37,7 +39,9 @@ module.exports = {
       }]
     }]
   },
+  /*
   plugins: devMode
     ? [new LiveReloadPlugin({appendScriptTag: true})]
     : []
+  */
 }
