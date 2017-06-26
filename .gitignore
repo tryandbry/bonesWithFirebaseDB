@@ -10,3 +10,10 @@ public/bundle.js.map
 
 # NPM errors
 npm-debug.log
+
+#vim swap files
+*.swp
+*.swo
+
+#firebase debug
+firebase-debug.log
