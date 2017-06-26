@@ -6,9 +6,7 @@ import Navbar from '../components/Navbar'
 
 const AppContainer = ({ user, children }) => (
   <div>
-    <nav>
-      {user ? <WhoAmI/> : <Login/>}
-    </nav>
+    <Navbar user={user} />
     {children}
   </div>
 )
